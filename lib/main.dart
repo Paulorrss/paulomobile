@@ -248,45 +248,40 @@ class Login extends StatelessWidget {
                                       Positioned(
                                         left: 0,
                                         top: 0,
-                                        child: Container(
-                                          width: 335,
-                                          height: 56,
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                left: 0,
-                                                top: 0,
-                                                child: Container(
-                                                  width: 335,
-                                                  height: 56,
-                                                  decoration: ShapeDecoration(
-                                                    color: Color(0xFF0D6EFD),
-                                                    shape:
-                                                        RoundedRectangleBorder(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              16),
-                                                    ),
-                                                  ),
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    NewScreen(),
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            width: 335,
+                                            height: 56,
+                                            decoration: ShapeDecoration(
+                                              color: Color(0xFF0D6EFD),
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(16),
+                                              ),
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                'Entrar',
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 16,
+                                                  fontFamily:
+                                                      'Abhaya Libre Medium',
+                                                  fontWeight: FontWeight.w500,
+                                                  height: 0.08,
                                                 ),
                                               ),
-                                              Positioned(
-                                                left: 146,
-                                                top: 18,
-                                                child: Text(
-                                                  'Entrar',
-                                                  textAlign: TextAlign.center,
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 16,
-                                                    fontFamily:
-                                                        'Abhaya Libre Medium',
-                                                    fontWeight: FontWeight.w500,
-                                                    height: 0.08,
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -471,6 +466,20 @@ class Login extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class NewScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Nova Tela'),
+      ),
+      body: Center(
+        child: Text('Bem-vindo à nova tela!'),
+      ),
     );
   }
 }
