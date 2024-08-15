@@ -156,13 +156,18 @@ class Login extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 5),
-                      const Text(
-                        'Inscrever-se',
-                        style: TextStyle(
-                          color: Color(0xFF0D6EFD),
-                          fontSize: 14,
-                          fontFamily: 'Aclonica',
-                          fontWeight: FontWeight.w400,
+                      TextButton(
+                        onPressed: () {
+                          // Adicione aqui a ação que deve ocorrer ao pressionar o botão
+                        },
+                        child: const Text(
+                          'Inscrever-se',
+                          style: TextStyle(
+                            color: Color(0xFF0D6EFD),
+                            fontSize: 14,
+                            fontFamily: 'Aclonica',
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ],
