@@ -157,9 +157,7 @@ class Login extends StatelessWidget {
                       ),
                       const SizedBox(height: 5),
                       TextButton(
-                        onPressed: () {
-                          // Adicione aqui a ação que deve ocorrer ao pressionar o botão
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Inscrever-se',
                           style: TextStyle(
@@ -170,6 +168,13 @@ class Login extends StatelessWidget {
                           ),
                         ),
                       ),
+                      const Spacer(), // Adiciona espaço flexível para empurrar os botões para a parte inferior
+
+                      const SizedBox(height: 20), // Espaçamento inferior
+                      Image(
+                        width: 500,
+                        image: const AssetImage('assets/Group 335.png'),
+                      )
                     ],
                   ),
                 ),
