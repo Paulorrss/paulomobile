@@ -213,8 +213,8 @@ class Integrado1 extends StatelessWidget {
                     height: 444,
                     decoration: ShapeDecoration(
                       image: DecorationImage(
-                        image:
-                            NetworkImage("https://via.placeholder.com/375x444"),
+                        image: NetworkImage(
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dPPf6-zt4llYmMYiTARZn5vtFF26veNOkGU-TjXYDWQ70hRh"),
                         fit: BoxFit.cover,
                       ),
                       shape: RoundedRectangleBorder(
@@ -572,7 +572,7 @@ class Integrado1 extends StatelessWidget {
                             width: 134,
                             height: 5,
                             decoration: ShapeDecoration(
-                              color: Color(0xFF1B1E28),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(100),
                               ),
